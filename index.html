@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header>
+    <marquee scrollamount="6" behavior="alternate" direction="right">
+        <div class="titleHead"></div>
+    </marquee>
+</header>
+<div id="indicators">
+    <h2>Joueur 1</h2>
+    <div id="played"></div>
+    <div id="shots"></div>
+    <div id="killed"></div>
+    <input type="radio" name="gp" value="1" hidden="hidden" />
+    <p><b>Commandes :</b></p>
+    <ul>
+        <li>TIRER <br><img src="assets/img/z.png" width="40" height="40" alt="touche Z"/></li>
+        <li>Gauche<br><img src="assets/img/q.png" width="40" height="40" alt="touche Q"/></li>
+        <li>Droite<br><img src="assets/img/d.png" width="40" height="40" alt="touche D"/></li>
+    </ul>
+    <input type="button" id="stopBtn" value="Quitter" />
+</div>
+<div id="indicators2">
+    <h2>Joueur 2</h2>
+    <div id="played2"></div>
+    <div id="shots2"></div>
+    <div id="killed2"></div>
+    <input type="radio" name="gp" value="1" hidden="hidden" />
+    <p><b>Commandes :</b></p>
+    <ul>
+        <li>TIRER <br><img src="assets/img/haut.png" width="40" height="40" alt="fleche haut"/></li>
+        <li>Gauche<br><img src="assets/img/gauche.png" width="40" height="40" alt="fleche gauche"/></li>
+        <li>Droite<br><img src="assets/img/droite.png" width="40" height="40" alt="fleche droite"/></li>
+    </ul>
+    <input type="button" id="stopBtn2" value="Quitter" />
+</div>
+<div id="game_frame">
+    <div id="game_object">
+        <div id="board"></div>
+    </div>
+</div>
+<div id="gameFrame2">
+    <div id="gameObject2">
+        <div id="board2"></div>
+    </div>
+</div>
+<footer>
+    <p>
+        Lesage David, Erbani Alexandre, Barbe Jean-Baptiste, Hournon Romuald PROMO 1 Soissons
+    </p>
+</footer>
+<script src="assets/js/jquery-3.3.1.js"></script>
+<script src="assets/js/functionShoot.js"></script>
+<script src="assets/js/functionShootJ2.js"></script>
+</body>
+</html>
